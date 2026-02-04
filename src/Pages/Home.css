@@ -16,6 +16,7 @@
   gap: 60px;
 }
 
+/* ---------- TEXT SECTION ---------- */
 .text-section {
   flex: 1;
 }
@@ -41,11 +42,11 @@
   line-height: 1.6;
 }
 
+/* ---------- SKILLS SECTION ---------- */
 .skills {
   margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: 10px;
 }
 
@@ -54,14 +55,16 @@
   padding: 8px 12px;
   border-radius: 20px;
   font-size: 14px;
+  transition: background 0.3s, color 0.3s;
 }
+
 .skills span:hover {
   background: #2563eb;
   color: white;
   cursor: default;
-  transition: background 0.3s, color 0.3s;
 }
 
+/* ---------- PROFILE IMAGE ---------- */
 .image-section img {
   width: 280px;
   height: 280px;
@@ -71,6 +74,31 @@
   background: white;
 }
 
+/* ---------- DOWNLOAD RESUME BUTTON ---------- */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border: none; /* removed duplicate/conflicting border */
+}
+
+.btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
 @media (max-width: 900px) {
   .home-content {
     flex-direction: column;
@@ -79,6 +107,11 @@
   }
 
   .skills {
+    justify-content: center;
+  }
+
+  .buttons {
+    display: flex;
     justify-content: center;
   }
 }
