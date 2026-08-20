@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Remove extra margin that was breaking layout */
+.App > div {
+  margin-top: 0;
+}
